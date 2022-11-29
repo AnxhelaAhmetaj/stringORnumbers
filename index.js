@@ -5,7 +5,7 @@ import findUniqueStrings from './uniqueStrings.js';
 try {
     const content = await fsp.readFile('./data.csv', 'utf-8');
 
-    //here we check if the content cointains whitespace or digits
+    //here we check if the content contains whitespace or digits
     if(/(\s)*(\d)/g.test(content)) {
         await sumOfNumbers(content);
     }
